@@ -101,6 +101,11 @@ img {
   color: var(--OCEAN, #404bbf);
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* Solutions */
 
 .main {
@@ -188,7 +193,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.32px;
   max-width: 264px;
-  max-height: 104px;
   display: flex;
 }
 
