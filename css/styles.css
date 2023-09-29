@@ -93,7 +93,8 @@ img {
 .header-set {
   display: flex;
   gap: 40px;
-  display: inline-flex;
+  display: flex;
+  padding: 24px 0;
 }
 
 .adress {
@@ -307,6 +308,7 @@ img {
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   border-top: none;
   margin: 0;
+  padding: 32px 16px;
 }
 
 .portfolio-headings {
