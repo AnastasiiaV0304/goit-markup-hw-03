@@ -1,13 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif, "Raleway", sans-serif;
   color: #434455;
   background: #fff;
+  margin: 0;
 }
 ul {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -18,6 +58,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-part {
@@ -35,6 +76,12 @@ a {
 .link:hover,
 .link:focus {
   color: var(--OCEAN, #404bbf);
+}
+
+.header-set {
+  display: flex;
+  gap: 40px;
+  display: inline-flex;
 }
 
 .adress {
@@ -60,6 +107,12 @@ a {
   background: var(--NAVY-BLUE, #2e2f42);
 }
 
+.solutions-container {
+  padding: 188px 316px;
+  max-height: 600px;
+  text-align: center;
+}
+
 .main-header {
   color: var(--WHITE, #fff);
   text-align: center;
@@ -68,6 +121,8 @@ a {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  margin-bottom: 48px;
+  max-width: 496px;
 }
 
 .button {
@@ -80,6 +135,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  padding: 16px 32px;
 }
 
 .button:hover,
@@ -96,6 +152,33 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+
+.features-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-description {
@@ -104,12 +187,29 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  max-width: 264px;
+  max-height: 104px;
+  display: flex;
 }
 
 /* Our team */
 
-.background {
+.team-card {
   background-color: #ffffff;
+}
+
+.team-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-set {
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 .heading {
@@ -121,6 +221,7 @@ a {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .our-team-section {
@@ -135,6 +236,8 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .team-card-p {
@@ -144,9 +247,35 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 32px;
 }
 
 /* Our portfolio */
+
+.portfolio-container {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.portfolio-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-description {
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-top: none;
+  margin: 0;
+}
 
 .portfolio-headings {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -155,6 +284,9 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .portfolio-p {
@@ -163,12 +295,20 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding-bottom: 32px;
+  padding: 16px;
 }
 
 /* Footer */
 
 .footer {
   background: var(--NAVY-BLUE, #2e2f42);
+  padding: 100px 0;
+}
+
+.logo-footer {
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 .logo-part-variant {
@@ -187,4 +327,6 @@ a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  max-width: 264px;
+  margin: 0;
 }
